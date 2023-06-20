@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,400;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root{
+    --cor0: #f28da8;
+    --cor1: #667302;
+    --cor2: #b9bf04;
+    --cor3: #bf8275;
+    --cor4: #8c2920;
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --fonte-título: 'Pathway Extreme', cursive;
+    --fonte-poema: 'Indie Flower', sans-serif;
+}
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrão);
+    
+}
+header{
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-título);
+    font-size: 10vw;
+    font-weight: 200;
+}
+header > p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: 900;
+    font-size: 4vw;
+}
+p > abbr{
+    text-decoration: none;
+}
+header a, footer a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: var(--cor2);
+    transition-duration: 5seg;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-family: var(--fonte-poema);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: var(--cor2);
+    color: black;
+    text-shadow: 0px 1px 0px black;
+}
+section.imagem{
+    background-color: var(--cor2);
+   box-shadow: inset 5px 0px 8px rgba(0, 0, 0, 0.541);
+   background-size: cover;
+   background-attachment: fixed;
+}
+section.imagem > p{
+    background-color:#3c4401af;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.733);
+    background-size: cover;
+    background-attachment: fixed;
+ 
+}
+
+section#img01{
+    background-image: url(media/campoflorespequeno.jpg);
+    background-position: center center;
+}
+section#img02{
+    background-image: url(media/girassolpequeno.jpg);
+    background-position: center center;
+}
+footer{
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-family: var(--fonte-título);
+    font-weight: 100;
+    font-size: 2.5vw;
+}
+footer a{
+    font-weight: 900;
+}
+
